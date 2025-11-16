@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Resume Analyzer — AI-Powered Smart Resume Insights  
+**Live Demo:** https://resume-analyzer-by-om.netlify.app/
 
-## Getting Started
+An intelligent, lightning-fast **AI Resume Analyzer** built with modern frontend technologies and powered by **Google Gemini** on the backend. It extracts skills, evaluates job-readiness, and provides a clean structured summary from any uploaded PDF resume.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ⭐ Features
+
+### 🚀 1. AI-Powered Summary Generation
+Automatically generates a clear, concise, and professional summary based on resume content using **Google Gemini**.
+
+### 🧩 2. Skills Extraction
+Detects and categorizes:
+- Technical skills  
+- Soft skills  
+- Tools & technologies  
+- Domain-specific competencies  
+
+All neatly structured for quick reading.
+
+### 📊 3. Resume Score (Job-Readiness Rating)
+Gives a detailed resume score based on:
+- Structure  
+- Clarity  
+- Skills  
+- Experience quality  
+- Real-world job readiness  
+
+Also includes improvement suggestions.
+
+### 📝 4. Clean UI/UX
+Built with:
+- React + Vite
+- Shadcn/UI
+- Tailwind CSS
+
+### ⚡ 5. Fast & Lightweight
+- Fully frontend-powered  
+- Gemini API handled through backend  
+- Instant and optimized response times  
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React  
+- Vite  
+- Shadcn/UI  
+- Tailwind CSS  
+
+### Backend
+- Google Gemini API  
+- PDF text parsing  
+- REST API endpoints  
+
+### Deployment
+- Netlify (Frontend)
+
+---
+
+## 📂 Project Structure
+
+```
+/src
+  /components
+  /features
+  /pages
+  /utils
+  /api
+/public
+backend/
+README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Upload your resume (PDF)  
+2. Text is extracted  
+3. Data sent to backend Gemini API  
+4. Gemini returns:  
+   - Summary  
+   - Skills  
+   - Score  
+   - Suggestions  
+5. UI displays everything beautifully in accordion sections  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧪 API Flow (Gemini Backend)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+Frontend → Resume PDF → Extract Text → Send to Backend  
+Backend → Gemini API → AI Processing → Return Result  
+Frontend → Display Output
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ▶️ Getting Started (Local Development)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Clone Repo
+```
+git clone https://github.com/your-username/resume-analyzer.git
+cd resume-analyzer
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Install Dependencies
+```
+npm install
+```
+
+### 3. Create .env File
+```
+VITE_BACKEND_URL=http://localhost:5000
+```
+
+### 4. Start Dev Server
+```
+npm run dev
+```
+
+---
+
+## 🌐 Live Demo
+👉 **https://resume-analyzer-by-om.netlify.app/**
+
+---
+
+## 📝 License
+MIT License © 2025 OM BHARGAV
