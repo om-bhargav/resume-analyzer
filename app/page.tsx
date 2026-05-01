@@ -230,32 +230,94 @@ export default function Home() {
         </div>
       </div>
       {/* Footer Section */}
-      <div className="border-t w-full border-t-gray-700 py-8">
-         <div className="flex flex-col text-center gap-4 items-center md:items-start mx-auto px-5 pb-3">
-          <div className="flex flex-col md:flex-row w-full justify-between">
-          <div className="font-semibold text-2xl">TalentScan AI</div>
-          <div className="flex flex-col md:flex-row gap-5">
-            <ul className="uppercase md:text-start">
-              <li>services</li>
-              <li>theme tweak</li>
-              <li>showcase</li>
-            </ul>
-            <ul className="uppercase md:text-start">
-              <li>weebly themes</li>
-              <li>pre-sales faqs</li>
-              <li>submit a ticket</li>
-            </ul>
-            <ul className="uppercase md:text-start">
-              <li>support</li>
-              <li>widget</li>
-            </ul>
-          </div>
-          </div>
-
-          <div className="bg-gray-400 h-[3px] w-full"></div>
-         </div>
-          <div className="text-center mt-5">&copy;Copyright. All Copyrights Reserved.</div>
+     <footer className="border-t border-gray-700 w-full">
+  <div className="max-w-7xl mx-auto px-5 py-10">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
+      
+      {/* Brand */}
+      <div className="space-y-3">
+        <h2 className="text-2xl font-semibold tracking-wide">
+          TalentScan AI
+        </h2>
+        <p className="text-sm text-gray-400 leading-6">
+          Smart AI-powered solutions to streamline hiring, talent discovery,
+          and recruitment workflows.
+        </p>
       </div>
+
+      {/* Links */}
+      <div>
+        <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
+          Services
+        </h3>
+        <ul className="space-y-2 text-sm text-gray-400">
+          <li className="hover:text-white transition cursor-pointer">
+            Theme Tweak
+          </li>
+          <li className="hover:text-white transition cursor-pointer">
+            Showcase
+          </li>
+          <li className="hover:text-white transition cursor-pointer">
+            Widgets
+          </li>
+        </ul>
+      </div>
+
+      {/* Support */}
+      <div>
+        <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
+          Support
+        </h3>
+        <ul className="space-y-2 text-sm text-gray-400">
+          <li className="hover:text-white transition cursor-pointer">
+            Pre-sales FAQs
+          </li>
+          <li className="hover:text-white transition cursor-pointer">
+            Submit a Ticket
+          </li>
+          <li className="hover:text-white transition cursor-pointer">
+            Help Center
+          </li>
+        </ul>
+      </div>
+
+      {/* Company */}
+      <div>
+        <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
+          Company
+        </h3>
+        <ul className="space-y-2 text-sm text-gray-400">
+          <li className="hover:text-white transition cursor-pointer">
+            About Us
+          </li>
+          <li className="hover:text-white transition cursor-pointer">
+            Contact
+          </li>
+          <li className="hover:text-white transition cursor-pointer">
+            Privacy Policy
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Divider */}
+    <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400 text-center">
+      <p>© {new Date().getFullYear()} TalentScan AI. All rights reserved.</p>
+
+      <div className="flex gap-5">
+        <span className="hover:text-white transition cursor-pointer">
+          Terms
+        </span>
+        <span className="hover:text-white transition cursor-pointer">
+          Privacy
+        </span>
+        <span className="hover:text-white transition cursor-pointer">
+          Contact
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
